@@ -1,17 +1,5 @@
-import base64
 
-# Function to encode local images to base64 for embedding in Markdown
-def get_image_base64(path):
-    try:
-        with open(path, "rb") as image_file:
-            return f"data:image/jpeg;base64,{base64.b64encode(image_file.read()).decode('utf-8')}"
-    except:
-        return ""
-
-# Note: In a real scenario, the user would upload the images to GitHub and use those links.
-# For this preview, I will create the content.
-
-markdown_content = """# 🌐 Microservices Service Mesh with Linkerd & Kubernetes
+# 🌐 Microservices Service Mesh with Linkerd & Kubernetes
 
 ![Service Mesh Banner](https://img.shields.io/badge/Service_Mesh-Linkerd-blueviolet?style=for-the-badge&logo=linkerd)
 ![Kubernetes](https://img.shields.io/badge/Kubernetes-v1.31-blue?style=for-the-badge&logo=kubernetes)
